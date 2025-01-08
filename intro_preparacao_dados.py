@@ -24,7 +24,7 @@ print(f"Análise de daods duplicados: \n {df.duplicated().sum()}")
 
 print(f"Análise de dados únicos: \n {df.nunique()}") # Busca a quantidade de valores únicos
 
-print(f"Estatísticas dos dados: \n {df.describe()}") # std -> desvio padrão
+print(f"Estatísticas dos dados: \n {df.describe()}") # std -> desvio padrão, verifica as estatisticas dos campos
 
 # Criar um novo dataFrame para não ser possível identificar o usuário por questões de LGPD
 df = df[['idade', 'data', 'estado', 'salario', 'nivel_educacao', 'numero_filhos', 'estado_civil', 'area_atuacao']]

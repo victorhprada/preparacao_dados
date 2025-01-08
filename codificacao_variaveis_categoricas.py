@@ -24,7 +24,7 @@ print(f"\n Categorias criadas pelo cat.codes: \n {df['area_atuacao'].astype('cat
 print(f"\n DataFrame após transformar area_atuacao em códigos numéricos: \n {df.head()}")
 
 # LabelEncoder para estado
-# LabelEncoder converte cda valor único em números de 0 a n_classes-1
+# LabelEncoder converte cada valor único em números de 0 a n_classes-1
 label_encoder = LabelEncoder()
 df['estado_cod'] = label_encoder.fit_transform(df['estado'])
 print(f"\n DataFrame após aplicar LabelEncoder: \n {df.head()}")
